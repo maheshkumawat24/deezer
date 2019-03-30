@@ -1,0 +1,34 @@
+<!-- Search Component -->
+<tidal-search (onArtistClick)="getArtistAlbumDetail($event)"></tidal-search>
+<!-- Album Component-->
+<div *ngIf="artistName">
+  <div class="search-result-txt">
+    Search results for "{{artistName}}"
+  </div>
+  <div *ngIf="albums.length>0;else alubumnocontent">
+    <div class="album-txt">
+      Albums
+    </div>
+    <div class="album-container">
+      <ng-container *ngFor="let album of albums;let i=index ">
+        <tidal-album [album]="album" (onAlbumClick)="displayTracksList($event, trackEndList)"></tidal-album>
+      </ng-container>
+    </div>
+  </div>
+  <ng-template #alubumnocontent >
+    <div style="color:white">
+        No results found
+    </div>
+  </ng-template>
+</div>
+<!-- Tracks Component -->
+<div *ngIf="tracks.length>0" class="album-detail-container">
+  <div class="album-img-container">
+    <img src="{{selectedAlbum.cover_medium}}" />
+  </div>
+  <div>
+    <div class="album-txt">{{selectedAlbum.title}}</div>
+    <tidal-track-table [trackList]="tracks"></tidal-track-table>
+  </div>
+</div>
+<div #trackEndList></div>

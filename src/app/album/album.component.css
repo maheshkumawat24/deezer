@@ -1,0 +1,10 @@
+.album-caption {
+    display: block;
+    color:white;
+    font-size: 15px;
+    color:aqua
+}
+
+.img-container:hover {
+   cursor: pointer;
+}

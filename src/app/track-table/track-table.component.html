@@ -1,0 +1,10 @@
+<table>
+    <tr>
+      <th *ngFor="let col of columns">{{col}}</th>
+    </tr>
+    <tr *ngFor="let track of trackList" 
+        tidal-track-table-row 
+        [track]="track" 
+        [keys]="trackKeys">
+    </tr>
+</table>

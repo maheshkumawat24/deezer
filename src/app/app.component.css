@@ -1,0 +1,6 @@
+.app-container {
+    display: grid;
+    margin: 30px auto 0 auto;
+    width: 80%;
+    max-width: 1300px;
+}

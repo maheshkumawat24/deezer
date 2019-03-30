@@ -1,0 +1,10 @@
+<div class="autocomplete" style="width:500px;">
+  <input [formControl]="searchField" type="text" name="artists" placeholder="search artists">
+  <!-- show div if artist is not clicked-->
+  <div *ngIf="!isArtistSelected"  class="autocomplete-items">
+    <div (click)="onArtistClicked(artist)" class="search-items" *ngFor="let artist of artists">
+      {{artist.artist.name}} 
+    </div>
+  </div>
+</div><!--- End containter of  search text box-->
+<input type="submit">
