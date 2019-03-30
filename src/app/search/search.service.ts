@@ -16,6 +16,4 @@ export class SearchService {
     return this._http.get(_URL);
   }
 
- 
-
 }
