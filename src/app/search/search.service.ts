@@ -12,7 +12,7 @@ export class SearchService {
    * @param queryString : artist Name which user types to search
    */
   search(artistName: string) {
-    let _URL = environment.proxyUrl + environment.baseUrl + URLS.artistSearchUrl + artistName;
+    let _URL = environment.proxyUrl + environment.baseUrl + URLS.artistSearchUrl +artistName;
     return this._http.get(_URL);
   }
 
