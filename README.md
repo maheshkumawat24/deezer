@@ -3,7 +3,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.10.
 
-## Output
+## Output ( Tested on - chrome, Firefox browsers)
 [Output](https://young-thicket-22626.herokuapp.com/)
 
 ## Development server
