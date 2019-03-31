@@ -1,5 +1,7 @@
 <!-- Search Component -->
-<tidal-search (onArtistClick)="getArtistAlbumDetail($event)"></tidal-search>
+<div class="search-container">
+    <tidal-search (onArtistClick)="getArtistAlbumDetail($event)"></tidal-search>
+</div>
 <!-- Album Component-->
 <div *ngIf="artistName">
   <div class="search-result-txt">
