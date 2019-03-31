@@ -32,10 +32,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Injector graphs (component injections in DOM)
 
-![](images/AppModule.PNG)
-![](images/appComponent.PNG)
-![](images/HomeComponent.PNG)
-![](images/SearchComponent.PNG)
-![](images/AlbumComponent.PNG)
-![](images/TrackTableComponent.PNG)
-![](images/TrackTablerowComponent.PNG)
+![](images/AppModule.PNG) <br/>
+![](images/appComponent.PNG)<br/>
+![](images/HomeComponent.PNG)<br/>
+![](images/SearchComponent.PNG)<br/>
+![](images/AlbumComponent.PNG)<br/>
+![](images/TrackTableComponent.PNG)<br/>
+![](images/TrackTablerowComponent.PNG)<br/>
