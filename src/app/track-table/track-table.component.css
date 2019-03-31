@@ -1,3 +1,16 @@
+.table-normal {
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-normal thead tr {
+    font-weight: bold;
+    color: #fff;
+}
 .table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -8,4 +21,14 @@ th, td {
     text-align: left;
     padding: 8px;
     color:white;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+tr {
+    border-bottom: 1px solid #1c1c1c;
+}
+tr:last-child {
+    border-bottom: none
 }

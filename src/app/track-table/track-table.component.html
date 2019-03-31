@@ -1,7 +1,11 @@
-<table>
-    <tr>
-      <th *ngFor="let col of columns">{{col}}</th>
-    </tr>
+<table class="table-normal">
+  <thead>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col}}
+        </th>
+      </tr>
+  </thead>
     <tr *ngFor="let track of trackList" 
         tidal-track-table-row 
         [track]="track" 
